@@ -9,9 +9,11 @@ Right-click on the `class="header-llc-sidesheet-preview"` that stands for the **
 
 Open Katalon Studio, and insert the custom keyword `web.ShadowDom.clickDomElement`
 Double-click on the **Input** column and paste the JS path > OK.
+
 <img width="721" alt="8abcaa9d-8777-4b92-98dd-72b699fc6a1d" src="https://github.com/vikim97/ShadowDom/assets/85481702/016e94e7-fda1-481c-9cca-3efd84b96254">
 
 Next, we do the same with the set text step, I inspect the **Search** field, right-click on the element > **Copy** > **Copy JS path**.
+
 <img width="1262" alt="51447a01-029c-4c56-8547-6adadc43d300" src="https://github.com/vikim97/ShadowDom/assets/85481702/aa4d726c-9a75-49e2-a676-3f6ccf7abcd6">
 
 I insert the keyword `web.ShadowDom.setTextDomElement`.
