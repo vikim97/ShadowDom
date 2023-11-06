@@ -18,9 +18,11 @@ Next, we do the same with the set text step, I inspect the **Search** field, rig
 
 I insert the keyword `web.ShadowDom.setTextDomElement`.
 Double-click on the Input column, paste the JS path in the **script** param and **Vietnam** in the text param.
+
 <img width="742" alt="e8fc05b0-fdcb-48a3-9714-e33e85f22aae" src="https://github.com/vikim97/ShadowDom/assets/85481702/bbc741a2-86fe-4712-b5c7-1272c3db5aaa">
 
 Just run the test and observe the result.
+
 <img width="559" alt="3db4c36c-1364-4356-bb38-8c003dd53539" src="https://github.com/vikim97/ShadowDom/assets/85481702/44fe782c-afaf-4ffb-b91e-d45e038d4a5e">
 
 ## Demo video: 
