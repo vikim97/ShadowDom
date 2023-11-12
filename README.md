@@ -32,5 +32,8 @@ Just run the test and observe the result.
 
 <img width="559" alt="3db4c36c-1364-4356-bb38-8c003dd53539" src="https://github.com/vikim97/ShadowDom/assets/85481702/44fe782c-afaf-4ffb-b91e-d45e038d4a5e">
 
+# Exception Error Troubleshoot:
+If you're facing the error message: `org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found`. Try using other JS paths or add `WebUI.delay()` before the failed test steps.
+
 ## Demo video: 
 https://drive.google.com/file/d/19TVM4lBD9pFphx76rJ_ngg-hXVt38SlU/view?usp=sharing
