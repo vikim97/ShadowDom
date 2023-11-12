@@ -1,9 +1,9 @@
 # Supported methods
-clickDomElement
-scrollToDomElement
-setTextDomElement
-getTextDomElement
-verifyDomElementPresent
+clickDomElement.
+scrollToDomElement.
+setTextDomElement.
+getTextDomElement.
+verifyDomElementPresent.
 Updating...
 
 # How To Use
