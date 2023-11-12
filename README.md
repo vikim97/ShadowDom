@@ -1,3 +1,11 @@
+# Supported methods
+clickDomElement
+scrollToDomElement
+setTextDomElement
+getTextDomElement
+verifyDomElementPresent
+Updating...
+
 # How To Use
 Scenario: Navigate to https://www.ti.com/, click on **Ship to**, search for **Vietnam**.
 
