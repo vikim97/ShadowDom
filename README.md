@@ -2,9 +2,13 @@
 `clickDomElement`
 
 `scrollToDomElement`
-setTextDomElement.
-getTextDomElement.
-verifyDomElementPresent.
+
+`setTextDomElement`
+
+`getTextDomElement`
+
+`verifyDomElementPresent`
+
 Updating...
 
 # How To Use
