@@ -1,5 +1,6 @@
 # Supported methods
 `clickDomElement`
+
 `scrollToDomElement`
 setTextDomElement.
 getTextDomElement.
