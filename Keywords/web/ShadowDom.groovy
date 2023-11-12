@@ -35,12 +35,12 @@ import internal.GlobalVariable
 public class ShadowDom {
 
 	@Keyword
-	def clickDomElement(String script) throws StepFailedException {
+	def clickDomElement(String JSPath) throws StepFailedException {
 		WebDriver driver = DriverFactory.getWebDriver();
 		JavascriptExecutor jsExecutor = ((JavascriptExecutor) driver)
 
 
-		WebElement elementLocator = ((jsExecutor.executeScript("return " + script) as WebElement))
+		WebElement elementLocator = ((jsExecutor.executeScript("return " + JSPath) as WebElement))
 
 		if (elementLocator.isDisplayed() && elementLocator.isEnabled()) {
 
@@ -58,12 +58,12 @@ public class ShadowDom {
 	@Keyword
 
 
-	def scrollToDomElement(String script) throws StepFailedException {
+	def scrollToDomElement(String JSPath) throws StepFailedException {
 		WebDriver driver = DriverFactory.getWebDriver();
 		JavascriptExecutor jsExecutor = ((JavascriptExecutor) driver)
 
 
-		WebElement elementLocator = ((jsExecutor.executeScript("return " + script) as WebElement))
+		WebElement elementLocator = ((jsExecutor.executeScript("return " + JSPath) as WebElement))
 		//WebUI.delay(8)
 
 		if (elementLocator.isDisplayed() && elementLocator.isEnabled()){
@@ -79,12 +79,12 @@ public class ShadowDom {
 	}
 
 	@Keyword
-	def setTextDomElement(String script, String text) throws StepFailedException {
+	def setTextDomElement(String JSPath, String text) throws StepFailedException {
 		WebDriver driver = DriverFactory.getWebDriver();
 		JavascriptExecutor jsExecutor = ((JavascriptExecutor) driver)
 
 
-		WebElement elementLocator = ((jsExecutor.executeScript("return " + script) as WebElement))
+		WebElement elementLocator = ((jsExecutor.executeScript("return " + JSPath) as WebElement))
 		if (elementLocator.isDisplayed() && elementLocator.isEnabled()) {
 			WebUI.delay(3)
 			elementLocator.sendKeys(text)
@@ -95,12 +95,12 @@ public class ShadowDom {
 	}
 	
 	@Keyword
-	def getTextDomElement(String script) throws StepFailedException {
+	def getTextDomElement(String JSPath) throws StepFailedException {
 		WebDriver driver = DriverFactory.getWebDriver();
 		JavascriptExecutor jsExecutor = ((JavascriptExecutor) driver)
 
 
-		WebElement elementLocator = ((jsExecutor.executeScript("return " + script) as WebElement))
+		WebElement elementLocator = ((jsExecutor.executeScript("return " + JSPath) as WebElement))
 		if (elementLocator.isDisplayed() && elementLocator.isEnabled()) {
 			WebUI.delay(3)
 			println(elementLocator.getText())
@@ -110,12 +110,12 @@ public class ShadowDom {
 		}
 	}
 	@Keyword
-	def verifyDomElementPresent(String script) throws StepFailedException {
+	def verifyDomElementPresent(String JSPath) throws StepFailedException {
 		WebDriver driver = DriverFactory.getWebDriver();
 		JavascriptExecutor jsExecutor = ((JavascriptExecutor) driver)
 
 
-		WebElement elementLocator = ((jsExecutor.executeScript("return " + script) as WebElement))
+		WebElement elementLocator = ((jsExecutor.executeScript("return " + JSPath) as WebElement))
 		if (elementLocator.isDisplayed() && elementLocator.isEnabled()) {
 			KeywordUtil.markPassed("---> Element is present successfully")
 		}
