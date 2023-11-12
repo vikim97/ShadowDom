@@ -1,6 +1,6 @@
 # Supported methods
-clickDomElement.
-scrollToDomElement.
+`clickDomElement`
+`scrollToDomElement`
 setTextDomElement.
 getTextDomElement.
 verifyDomElementPresent.
