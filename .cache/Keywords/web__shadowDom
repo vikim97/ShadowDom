@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "D33538E8B1651AE9F20A29EA54F4F620",
+  "keywordFileContentHash": "29D7633C3561586D0355EE798358CE33",
   "keywordClasses": [
     {
       "name": "web.ShadowDom",
@@ -60,6 +60,25 @@
             },
             {
               "name": "text",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "getTextDomElement",
+          "parameters": [
+            {
+              "name": "script",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",

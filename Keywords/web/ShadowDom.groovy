@@ -64,12 +64,13 @@ public class ShadowDom {
 
 
 		WebElement elementLocator = ((jsExecutor.executeScript("return " + script) as WebElement))
+		//WebUI.delay(8)
 
 		if (elementLocator.isDisplayed() && elementLocator.isEnabled()){
-			WebUI.delay(3)
+			
 			jsExecutor.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});", elementLocator)
 			KeywordUtil.markPassed("---> Element is scrolled successfully")
-			}
+		}
 		else {
 
 
@@ -87,7 +88,22 @@ public class ShadowDom {
 		if (elementLocator.isDisplayed() && elementLocator.isEnabled()) {
 			WebUI.delay(3)
 			elementLocator.sendKeys(text)
-			
+		}
+		else {
+			KeywordUtil.markFailedAndStop("---> Element is not clicked successfully")
+		}
+	}
+	
+	@Keyword
+	def getTextDomElement(String script) throws StepFailedException {
+		WebDriver driver = DriverFactory.getWebDriver();
+		JavascriptExecutor jsExecutor = ((JavascriptExecutor) driver)
+
+
+		WebElement elementLocator = ((jsExecutor.executeScript("return " + script) as WebElement))
+		if (elementLocator.isDisplayed() && elementLocator.isEnabled()) {
+			WebUI.delay(3)
+			println(elementLocator.getText())
 		}
 		else {
 			KeywordUtil.markFailedAndStop("---> Element is not clicked successfully")
@@ -102,8 +118,6 @@ public class ShadowDom {
 		WebElement elementLocator = ((jsExecutor.executeScript("return " + script) as WebElement))
 		if (elementLocator.isDisplayed() && elementLocator.isEnabled()) {
 			KeywordUtil.markPassed("---> Element is present successfully")
-			
-			
 		}
 		else {
 			KeywordUtil.markFailedAndStop("---> Element is not present")
